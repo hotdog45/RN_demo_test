@@ -27,7 +27,7 @@ const AppStack=createStackNavigator({
     Page1:{
         screen:Page1
     }
-})
+});
 const AuthStack = createStackNavigator({
     Login: {
         screen: Login
@@ -37,15 +37,7 @@ const AuthStack = createStackNavigator({
         // header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
     }
 });
-export default createSwitchNavigator(
-    {
-        Auth: AuthStack,
-        App: AppStack,
-    },
-    {
-        initialRouteName: 'Auth',
-    }
-);
+
 const DrawerNav = createDrawerNavigator({
 
         Page4: {
@@ -193,7 +185,7 @@ const AppBottomNavigator = createBottomTabNavigator({
     }
 })
 
-export const AppStackNavigator = createStackNavigator({
+const AppStackNavigator = createStackNavigator({
     HomePage: {
         screen: HomePage
     },
@@ -256,4 +248,14 @@ export const AppStackNavigator = createStackNavigator({
             title: 'DrawerNav'//静态配置
         })
     },
-})
+});
+export default createSwitchNavigator(
+    {
+        Auth: AuthStack,
+        App: AppStackNavigator,
+        // APP:AppStack
+    },
+    {
+        initialRouteName: 'Auth',
+    }
+);
