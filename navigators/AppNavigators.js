@@ -13,6 +13,11 @@ import Page2 from '../page/Page2'
 import Page3 from '../page/Page3'
 import Page4 from '../page/Page4'
 import Page5 from '../page/Page5'
+import FlatListDemo from '../page/FlatListDemo'
+import SwipeableFlatListDemo from '../page/SwipeableFlatListDemo'
+import SectionListDemo from '../page/SectionListDemo'
+
+
 import {Button, Platform,SafeAreaView,ScrollView} from 'react-native'
 import React from 'react'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -248,6 +253,24 @@ const AppStackNavigator = createStackNavigator({
             title: 'DrawerNav'//静态配置
         })
     },
+    FlatListDemo: {
+        screen: FlatListDemo,
+        navigationOptions: ({
+            title: 'FlatListDemo'//静态配置
+        })
+    },
+    SwipeableFlatListDemo: {
+        screen: SwipeableFlatListDemo,
+        navigationOptions: ({
+            title: 'SwipeableFlatListDemo'//静态配置
+        })
+    },
+    SectionListDemo: {
+        screen: SectionListDemo,
+        navigationOptions: ({
+            title: 'SectionListDemo'//静态配置
+        })
+    },
 });
 export default createSwitchNavigator(
     {
@@ -256,6 +279,6 @@ export default createSwitchNavigator(
         // APP:AppStack
     },
     {
-        initialRouteName: 'Auth',
+        initialRouteName: 'App',
     }
 );
