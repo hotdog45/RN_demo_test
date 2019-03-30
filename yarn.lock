@@ -4419,7 +4419,7 @@ react-navigation-stack@1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/react-navigation-stack/download/react-navigation-stack-1.1.1.tgz#f9d70db678b50ba581c6aeea1171ad6b1a212693"
 
-react-navigation-tabs@1.0.2:
+react-navigation-tabs@1.0.2, react-navigation-tabs@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/react-navigation-tabs/download/react-navigation-tabs-1.0.2.tgz#cc6c61db0c61054388ef6f726a8ffc183d6095b5"
   dependencies:

@@ -7,19 +7,26 @@
  */
 
 import React, {Component} from 'react';
-import { StyleSheet, Text, View} from 'react-native';
-
-
+import {StyleSheet, Text, View} from 'react-native';
+import {
+    createBottomTabNavigator
+} from 'react-navigation'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import MyPage from './MyPage';
+import PopularPage from './PopularPage';
+import FavoritePage from './FavoritePage';
+import TrendingPage from './TrendingPage';
+import Page1 from "../../page/Page1";
+import DynamicTabNavigator from '../navigators/DynamicTabNavigator'
 
 type Props = {};
 export default class HomePage extends Component<Props> {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>Welcome to HomePage !</Text>
 
-            </View>
-        );
+
+
+    render() {
+
+        return <DynamicTabNavigator/>
     }
 }
 

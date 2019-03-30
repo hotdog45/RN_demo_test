@@ -19,7 +19,7 @@ export default class WelcomePage extends Component<Props> {
             // navigation.navigate('Main')
 
             NavigationUtil.goMainPage(this.props.navigation)
-        }, 2000)
+        }, 100)
     }
 
     componentWillUnmount(): void {
